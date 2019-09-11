@@ -10,4 +10,10 @@
 
         4.) Don't Drunk and drive"\n"
     </string>
+    <string name="railway_rules">Railway Rules</string>
+    <string name="education_rules">Education Rules</string>
+    <string name="political_rules">Political Rules</string>
+    <string name="medicine_rules">Medicine Rules</string>
+    <string name="traffic_rules_text">traffic Rules</string>
+    <string name="todo">TODO</string>
 </resources>
