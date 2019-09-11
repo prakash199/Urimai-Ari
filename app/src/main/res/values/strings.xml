@@ -2,13 +2,13 @@
     <string name="app_name">Urimai Ari</string>
     <string name="traffic_rules" translatable="false">Image for traffic rules</string>
     <string name="traffic" translatable="false">
-        1.) Follow the Traffic signal"\n"
+        1.) Follow the Traffic signal "\n"
 
-        2.) Wear Helmets"\n"
+        2.) Wear Helmets "\n"
 
-        3.) Don't Go triples."\n"
+        3.) "Don\'t" Go triples."\n"
 
-        4.) Don't Drunk and drive"\n"
+        4.) "Don\'t" Drunk and drive "\n"
     </string>
     <string name="railway_rules">Railway Rules</string>
     <string name="education_rules">Education Rules</string>

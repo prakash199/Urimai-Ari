@@ -4,16 +4,19 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_directions_run"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_directions_run"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".educationalActivity"></activity>
-        <activity android:name=".railwayActivity" />
-        <activity android:name=".medicalActivity" />
-        <activity android:name=".politicsActivity" />
-        <activity android:name=".TrafficActivity" />
+        <activity android:name=".splashscreen" android:theme="@style/splashscreen">
+
+        </activity>
+        <activity android:name=".educationalActivity" android:parentActivityName=".MainActivity" />
+        <activity android:name=".railwayActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".medicalActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".politicsActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".TrafficActivity" android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

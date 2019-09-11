@@ -1,12 +1,17 @@
 package com.android.urimaiadi;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+import com.android.urimaiadi.RecyclerViewAdapters.recyclerAdapterMain;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     static final String TAG = "MainActivity";
@@ -14,25 +19,29 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        ArrayList<String> iconText = new ArrayList<>();
+        ArrayList<Integer> icons = new ArrayList<>();
+        initalize(iconText,icons);
     }
 
-    public void traffic(View view) {
-        Log.d(TAG, "traffic: Traffic Rules Clicked!");
-        Intent intent = new Intent(this,TrafficActivity.class);
-        startActivity(intent);
+    private void initalize(ArrayList<String> iconText,ArrayList<Integer> icons) {
+        iconText.add("Traffic Rules");
+        icons.add(R.drawable.traffic_icon);
+        iconText.add("Educational Rules");
+        icons.add(R.drawable.education_icon);
+        iconText.add("Medicinal Rules");
+        icons.add(R.drawable.medical_icon);
+        iconText.add("Politics Rules");
+        icons.add(R.drawable.politics_icon);
+        iconText.add("Railway Rules");
+        icons.add(R.drawable.railway_icon);
+        setRecycler(icons,iconText);
     }
 
-    public void politcal(View view) {
-        Log.d(TAG, "politcal: Politics clicked");
-    }
-
-    public void railway(View view) {
-    }
-
-    public void medical(View view) {
-    }
-
-    public void education(View view) {
+    private void setRecycler(ArrayList<Integer> icons, ArrayList<String> iconText) {
+        recyclerAdapterMain adapterMain = new recyclerAdapterMain(icons,iconText,this);
+        RecyclerView recyclerViewMain = findViewById(R.id.recycler_menu_main);
+        recyclerViewMain.setAdapter(adapterMain);
+        recyclerViewMain.setLayoutManager(new GridLayoutManager(this,2));
     }
 }
