@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/rules_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/entry_text_style"
+        android:text="@string/app_name"
+        android:paddingStart="14dp"
+        android:paddingTop="14dp"
+        android:textAlignment="textStart"
+        android:textSize="28dp"/>
+    </ScrollView>
+</LinearLayout>

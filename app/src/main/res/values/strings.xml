@@ -15,5 +15,6 @@
     <string name="political_rules">Political Rules</string>
     <string name="medicine_rules">Medicine Rules</string>
     <string name="traffic_rules_text">traffic Rules</string>
+    <string name="trafficx" translatable="false"></string>
     <string name="todo">TODO</string>
 </resources>

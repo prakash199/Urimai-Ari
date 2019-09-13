@@ -10,7 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".splashscreen" android:theme="@style/splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".educationalActivity" android:parentActivityName=".MainActivity" />
         <activity android:name=".railwayActivity" android:parentActivityName=".MainActivity"/>
@@ -18,11 +22,6 @@
         <activity android:name=".politicsActivity" android:parentActivityName=".MainActivity"/>
         <activity android:name=".TrafficActivity" android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
